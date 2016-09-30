@@ -8,14 +8,14 @@ angular.module('angular-validateContains', [])
       restrict: 'A',
       replace: true,
       scope: {
-        data: '='
+        validateContains: '='
       },
       link: function (scope, elm, attrs, ctrl) {
         ctrl.$parsers.unshift(function (value) {
           var valid;
-          if (value && angular.isArray(scope.data)) {
+          if (value && angular.isArray(scope.validateContains)) {
             // test and set the validity after update.
-            valid = scope.data.indexOf(value) > -1;
+            valid = scope.validateContains.indexOf(value) > -1;
           }
           return valid ? value : undefined;
         });
