@@ -1,4 +1,4 @@
-# angular-validateContains
+# syn-validateContains
 Simple directive to validate if input value is in array. 
 
 ## Code Example
