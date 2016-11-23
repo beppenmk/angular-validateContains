@@ -5,7 +5,7 @@ Simple directive to validate if input value is in array.
 ```javascript
 (function () {
   "use strict";
-  angular.module("app", ["angular-validateContains"]);
+  angular.module("app", ["syn-validateContains"]);
 })();
 ....
 ....
